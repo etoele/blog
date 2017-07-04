@@ -1,3 +1,6 @@
+*.swp
+*.lock
+Gemfile.lock
 *.rbc
 capybara-*.html
 .rspec
