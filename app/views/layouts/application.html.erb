@@ -4,13 +4,16 @@
     <title>Doc</title>
     <%= csrf_meta_tags %>
 
+    <%= stylesheet_link_tag 'application', params[:controller], :media => "all" %>
+    <%= javascript_include_tag "application", params[:controller] %>
+
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
   <header>
     <h1>ETOELE</h1>
     <% if admin_signed_in? %>
-      <%= link_to('Deconnexion', destroy_admin_session_path, :class => "btn") %>
+      <%= link_to('Deconnexion', destroy_admin_session_path, :class => "btn", method: :delete) %>
     <% else %>
       <%= link_to('Connexion', admin_session_path, :class => "btn") %>
     <% end %>
