@@ -1,0 +1,44 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: #252830;
+  height: 100%;
+  width: 100%;
+}
+
+header {
+  padding-top: 20px;
+  margin-left: 220px;
+  display: inline-block;
+}
+
+header h1 {
+  color: white;
+  display: inline;
+}
+
+nav {
+  padding: 22px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 220px;
+}
+
+nav img {
+  margin-left: 15%;
+  margin-top: 5%;
+  width: 70%;
+}
+
+article {
+  margin-left: 220px;
+}
+
+.btn-submit {
+  
+}
